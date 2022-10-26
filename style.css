@@ -1,0 +1,41 @@
+* {
+    margin: 0px auto;
+    width: 560px;
+    text-align: center;
+
+}
+
+input {
+    width: 50px;
+}
+
+#logo img {
+    margin-top: 50px;
+}
+
+h1 {
+    background-color: #58a618;
+    color: white;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    background-color: #58a618;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+
+}
+
+a button {
+    text-decoration: none;
+    background-color: #58a618;
+    color: white;
+
+}

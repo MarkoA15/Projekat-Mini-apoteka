@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="slike/apoteka.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <title>Apoteka</title>
+
+</head>
+
+<body>
+    <div id="logo">
+        <img src="slike/apoteka2.jpg" alt="Slika logo-a" height="200px">
+    </div>
+    <h1>Mini Online apoteka</h1>
+    <form action="apoteka.php" method="post">
+        <table border="0">
+            <tr>
+                <th>Artikal</th>
+                <th>Cena</th>
+                <th>Kolicina</th>
+            </tr>
+            <tr>
+                <td>Andol</td>
+                <td name="cenaAndol">350.00</td>
+                <td><input type="number" step="1" min="0" max="5" value="0" id="andol" name="andol"></td>
+            </tr>
+            <tr>
+                <td>Aspirin</td>
+                <td name="cenaAspirin">450.00</td>
+                <td><input type="number" step="1" min="0" max="5" value="0" id="aspirin" name="aspirin"></td>
+            </tr>
+            <tr>
+                <td>Vitamin C</td>
+                <td name="cenaVitaminc">700.00</td>
+                <td><input type="number" step="1" min="0" max="5" value="0" id="vitaminc" name="vitaminc"></td>
+            </tr>
+            <tr>
+                <td>Magnezijum Direct</td>
+                <td name="cenaMagnezijum">1200.00</td>
+                <td><input type="number" step="1" min="0" max="5" value="0" id="magnezijum" name="magnezijum"></td>
+            </tr>
+        </table><br><br>
+        <h3>Vase ime i prezime, adresa dostave (ukoliko je zgrada u pitanju,navesti broj stana i sprat) i Vas kontakt
+            telefon:</h3> <textarea name="adresa" id="adresa" cols="0" rows="10"></textarea>
+        <button id="d1">Naruci proizvod</button>
+    </form>
+</body>
+
+</html>
+<script>
+    $(function () {
+
+        $("tr").mouseover(function () {
+            $(this).css("backgroundColor", "#58a618");
+            $(this).css("color", "white");
+            $(this).css("cursor", "pointer");
+        })
+        $("tr").mouseout(function () {
+            $(this).css("backgroundColor", "white");
+            $(this).css("color", "black");
+        })
+    })
+</script>
